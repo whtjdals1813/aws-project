@@ -27,5 +27,5 @@ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli container
 
 # Use Docker without root
 sudo usermod -aG docker $DOCKER_USER
-systemctl enable docker
-systemctl start docker
+sudo systemctl enable docker
+sudo systemctl start docker
