@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## INFO: https://docs.docker.com/engine/install/ubuntu
 
-set -euf pipefail
+# set -euf pipefail
 
 # 일반계정 이름으로
 DOCKER_USER=ubuntu
