@@ -1,4 +1,4 @@
-expore DOCKER_GID=1000
+export DOCKER_GID=1000
 chmod u+x install-docker.sh && ./install-docker.sh
 apt install zip unzip -y
 groupadd -g ${DOCKER_GID:-1000} -f docker
