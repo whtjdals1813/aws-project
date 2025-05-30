@@ -10,12 +10,12 @@ RUN chmod u+x install-awscli.sh && ./install-awscli.sh
 
 # docker install
 COPY scripts/install-docker.sh install-docker.sh
-#RUN chmod u+x install-docker.sh && ./install-docker.sh
+RUN chmod u+x install-docker.sh && ./install-docker.sh
 
 # zip install
-#RUN apt install zip unzip -y
+RUN apt install zip unzip -y
 
 # set jenkins user to host docker group
-#RUN /usr/sbin/groupadd -g ${DOCKER_GID:-1000} -f docker && /usr/sbin/usermod -aG docker jenkins
+RUN /usr/sbin/groupadd -g ${DOCKER_GID:-1000} -f docker && /usr/sbin/usermod -aG docker jenkins
 
-#USER jenkins
+USER jenkins
